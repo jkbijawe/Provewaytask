@@ -1,0 +1,114 @@
+   body {
+      font-family: 'Segoe UI', 'Helvetica Neue', 'Roboto', sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    h3{
+        color: #009646;
+    }
+
+    .box {
+      background: #fff;
+      border: 2px solid #807e7e;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      width: 40%;
+    }
+
+    .box.active {
+      border-color: #009628;
+      background-color: #e0f2e7;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 15px;
+    }
+
+    .radio-btn input[type="radio"] {
+      transform: scale(1.5);
+      cursor: pointer;
+    
+    }
+
+    .quantity h4, .quantity p, .offer p {
+      margin: 0;
+    }
+
+    .offer {
+      margin-left: auto;
+      font-weight: bold;
+    }
+    .offer span{
+        color:  #00964b;
+    }
+    .crash-text{
+        margin-left: 190px;
+        text-decoration: line-through;
+        color: gray;
+       
+    }
+
+    .hide-details {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+      opacity: 0;
+      padding: 0 15px;
+    }
+
+    .box.active .hide-details {
+      max-height: 500px;
+      opacity: 1;
+      margin-bottom: 15px;
+    }
+
+    .hide-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+      align-items: center;
+    }
+    .col-1{
+        width: 5%;
+        margin-left: 40px;
+    }
+     .col-2{
+        width: 20%;
+    }
+     .col-3{
+        width: 20%;
+    }
+
+    select {
+      width: 100%;
+      padding: 5px;
+    }
+    .text-row {
+        display: flex;
+        gap: 290px;
+        margin-top: 10px;
+    }
+    button{
+        width: 40% !important;
+        margin-top: 20px;
+        background-color:  #009652;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .cal-days{
+         color:  #009652;
+    }
+       
